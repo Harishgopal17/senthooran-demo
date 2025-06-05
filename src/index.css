@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+* {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sourceCode: "Source Code Pro", "monospace";
+  --font-archivoblack: "Archivo Black", "sans-serif";
+  --font-roboto: "Roboto", "sans-serif";
+  --color-primary: #212529;
+  --color-primary-shade: #4d5154;
+  --color-secondary: #f8f9fa;
+  --color-herbalGreen-tint: #6bae75;
+  --color-herbalGreen-shade: #4caf50;
+  --color-warmBeige-tint: #f5e1c0;
+  --color-warmBeige-shade: #dbd0b0;
+  --color-organicWood-tint: #8d6e63;
+  --color-organicWood-shade: #a9746e;
+  --color-deepGreen-tint: #2e7d32;
+  --color-deepGreen-shade: #388e3c;
+  --color-yellow-shade: #fdb500;
+  --shadow-cxl: 0 0px 10px rgba(0, 0, 0, 0.1);
+  --shadow-c2xl: 0 0px 20px rgba(0, 0, 0, 0.15);
+  --shadow-c3xl: 0 0px 30px rgba(0, 0, 0, 0.2);
+  --breakpoint-3xl: 1920px;
+  /* ... */
+}
+
+@layer utilities {
+  .max-container {
+    @apply max-w-[1360px] mx-auto;
+  }
+  .container {
+    @apply max-w-[1100px] mx-auto;
+  }
+
+  .hover-underline-line {
+    @apply absolute left-0 -bottom-1 h-[2px] w-0 bg-black transition-all duration-300;
+  }
+
+  .hover-underline-text {
+    @apply transition-colors duration-300;
+  }
+}
