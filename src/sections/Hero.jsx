@@ -15,7 +15,7 @@ export default function Hero() {
     <>
       <header
         id="home"
-        className="w-full flex items-center justify-center min-h-screen bg-warmBeige-tint text-primary max-md:pb-15"
+        className="w-full flex items-center justify-center min-h-screen bg-warmBeige-tint text-primary max-md:pb-15 max-sm:min-h-0"
       >
         <div className="w-full grid items-center grid-cols-5 gap-20 max-container px-5">
           <div className="flex justify-center flex-col items-start h-full col-span-3 gap-6 max-lg:col-span-5 max-md:pt-24">
