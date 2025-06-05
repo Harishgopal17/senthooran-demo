@@ -15,7 +15,7 @@ export default function FAQ() {
       id="faq"
     >
       <div className="w-full flex flex-col justify-center items-center bg-warmBeige-tint text-primary max-container px-5">
-        <div className="text-[32px] font-semibold pb-10">
+        <div className="text-[32px] font-semibold pb-10 max-sm:text-2xl">
           Frequently Asked Questions (FAQ)
         </div>
         <div className="">

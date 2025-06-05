@@ -18,8 +18,8 @@ export default function Hero() {
         className="w-full flex items-center justify-center min-h-screen bg-warmBeige-tint text-primary max-md:pb-15"
       >
         <div className="w-full grid items-center grid-cols-5 gap-20 max-container px-5">
-          <div className="flex justify-center flex-col items-start h-full col-span-3 gap-6 max-lg:col-span-5 max-md:pt-28">
-            <h1 className="text-[42px] leading-13 text-black font-semibold">
+          <div className="flex justify-center flex-col items-start h-full col-span-3 gap-6 max-lg:col-span-5 max-md:pt-24">
+            <h1 className="text-[42px] leading-13 text-black font-semibold max-sm:text-[36px]">
               Discover Our Range of&nbsp;
               <span className="text-yellow-shade font-semibold">
                 Handcrafted
@@ -29,7 +29,7 @@ export default function Hero() {
                 Traditional Essentials
               </span>
             </h1>
-            <p className="text-[18px] leading-7 tracking-wide">
+            <p className="text-[18px] leading-7 tracking-wide max-sm:text-base">
               At Senthooran, we believe that health begins with what we eat —
               that’s why every product we offer is crafted using traditional
               methods, natural ingredients, and no shortcuts.

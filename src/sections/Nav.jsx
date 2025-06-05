@@ -97,7 +97,7 @@ export default function Nav({ cartItems }) {
               className={
                 mblMenu
                   ? "fixed top-0 left-0 right-0 w-full h-[50%] z-20 ease duration-[600ms] hidden max-md:block"
-                  : "fixed top-[-500%] left-0 right-0 w-full h-[auto] z-20 ease duration-[600ms]"
+                  : "fixed top-[-500%] left-0 right-0 w-full h-[auto] z-20 ease duration-[300ms]"
               }
             >
               <ul className="flex flex-col justify-center items-center pt-5 font-[400] text-[18px] text-black bg-warmBeige-tint">

@@ -71,6 +71,8 @@ export default function CheckOut({ cartItems, setCartItems }) {
     window.open(whatsappLink, "_blank");
   };
 
+  console.log(cartItems);
+
   if (!cartItems || cartItems.length === 0) {
     return (
       <section className="min-h-screen flex flex-col items-center justify-center text-center gap-6 px-4 bg-warmBeige-tint text-primary">
@@ -105,7 +107,7 @@ export default function CheckOut({ cartItems, setCartItems }) {
                 className="flex gap-5 items-center bg-secondary py-2 rounded-xs"
               >
                 <div className="flex flex-col items-center max-sm:w-[30%]">
-                  <img src={blackRiceMain} className="w-[120px]" />
+                  <img src={item.images[0]} className="w-[120px]" />
                   <div className="flex items-center border-[1px] border-[#999] rounded-xl bg-secondary">
                     <button
                       className="px-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-s-xl"
@@ -279,7 +281,7 @@ export default function CheckOut({ cartItems, setCartItems }) {
               </div>
               <button
                 type="submit"
-                className="flex items-center justify-center gap-3 bg-deepGreen-shade text-secondary font-medium text-[18px] px-8 py-2 cursor-pointer rounded-lg mt-5"
+                className="flex items-center justify-center gap-3 bg-deepGreen-shade text-secondary font-medium text-[18px] px-8 py-2 cursor-pointer rounded-lg mt-5 hover:bg-deepGreen-tint transition-colors duration-300"
               >
                 <IoLogoWhatsapp size="24px" /> <span>Order via WhatsApp</span>
               </button>
