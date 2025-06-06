@@ -1,15 +1,17 @@
 import homepage from "./../assets/images/homepage.png";
 import healthMixMain from "./../assets/images/healthMixMain.jpg";
 import healthMixback from "./../assets/images/healthMixback.jpg";
-import healthMix2 from "./../assets/images/healthMix2.png";
+import healthMix2 from "./../assets/images/healthMix2.jpeg";
 import healthMix3 from "./../assets/images/healthMix3.png";
 import healthMixMainPacktwo from "./../assets/images/healthMixMainPacktwo.jpg";
 import blackRiceMain from "./../assets/images/blackRiceMain.jpg";
-import blackRice2 from "./../assets/images/blackRice2.jpg";
-import blackRice3 from "./../assets/images/blackRice3.jpg";
+import blackRice2 from "./../assets/images/blackRice2.jpeg";
+import blackRice3 from "./../assets/images/blackRice3.jpeg";
+import blackRice4 from "./../assets/images/blackRice4.jpeg";
 import ragiPowderMain from "./../assets/images/ragiPowderMain.jpg";
-import ragiPowder2 from "./../assets/images/ragiPowder2.jpg";
-import ragiPowder3 from "./../assets/images/ragiPowder3.jpg";
+import ragiPowder2 from "./../assets/images/ragiPowder2.jpeg";
+import ragiPowder3 from "./../assets/images/ragiPowder3.jpeg";
+import ragiPowder4 from "./../assets/images/ragiPowder4.jpg";
 import thalippuVadagamMain from "./../assets/images/thalippuVadagamMain.jpg";
 import thalippuVadagam2 from "./../assets/images/thalippuVadagam2.jpg";
 import thalippuVadagam3 from "./../assets/images/thalippuVadagam3.jpg";
@@ -212,7 +214,7 @@ export const productsListContent = {
     ],
   },
   blackrice: {
-    images: [blackRiceMain, blackRice2, blackRice3],
+    images: [blackRiceMain, blackRice2, blackRice3, blackRice4],
     itemName: "Karuppu Kavuni Kanji Maavu (Black Rice Porridge Powder)",
     price: "300",
     weight: "250g",
@@ -234,7 +236,7 @@ export const productsListContent = {
     ],
   },
   ragipowder: {
-    images: [ragiPowderMain, ragiPowder2, ragiPowder3],
+    images: [ragiPowderMain, ragiPowder2, ragiPowder3, ragiPowder4],
     itemName: "Ragi Powder",
     price: "100",
     weight: "500g",
@@ -325,5 +327,5 @@ export const termsAndCond = [
   "No returns are accepted for food items once opened, unless there's a quality issue reported on the day of delivery.",
 ];
 
-export const privasyPolicy =
+export const privacyPolicy =
   "We value your privacy. Any personal information (like your name, address, and phone number) shared during checkout is used only to process and deliver your order. We do not share your data with third parties.";

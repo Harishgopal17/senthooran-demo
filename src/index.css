@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 @import "tailwindcss";
 @import "swiper/css";
@@ -15,6 +16,7 @@
   --font-sourceCode: "Source Code Pro", "monospace";
   --font-archivoblack: "Archivo Black", "sans-serif";
   --font-roboto: "Roboto", "sans-serif";
+  --font-rubic: "Rubik", sans-serif;
   --color-primary: #212529;
   --color-primary-shade: #4d5154;
   --color-secondary: #f8f9fa;

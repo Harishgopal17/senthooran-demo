@@ -7,8 +7,8 @@ export default function About() {
       id="about"
     >
       <div className="flex flex-col max-container px-5 max-lg:px-10">
-        <div className="flex items-center justify-between gap-80 mb-10 max-lg:flex-col max-lg:gap-10 ">
-          <h2 className="text-[32px] font-semibold">
+        <div className="flex items-center justify-between gap-80 mb-10 max-lg:flex-col max-lg:gap-10 max-sm:gap-5 ">
+          <h2 className="text-[32px] font-semibold max-sm:text-[28px]">
             Why Choose Us <br /> For Your Healthy Food?
           </h2>
           <div className="text-[18px] w-[40%] text-primary-shade max-lg:w-full">

@@ -1,18 +1,14 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
-import About from "./sections/About";
 import Home from "./sections/Home";
 import Nav from "./sections/Nav";
-import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
-import Products from "./sections/Products";
 import ProductsList from "./sections/ProductsList";
 import CheckOut from "./sections/CheckOut";
 import Modal from "./components/Modal";
 
-import { termsAndCond, privasyPolicy } from "./constants/index.js";
+import { termsAndCond, privacyPolicy } from "./constants/index.js";
 
 function App() {
   const [cartItems, setCartItems] = useState(() => {
@@ -91,7 +87,7 @@ function App() {
         <Modal>
           <div className="flex flex-col justify-center items-center gap-5">
             <h5 className="text-xl font-medium">Privacy Policy</h5>
-            <div className="text-sm leading-6">{privasyPolicy}</div>
+            <div className="text-sm leading-6">{privacyPolicy}</div>
           </div>
           <div className="flex justify-center items-center">
             <button

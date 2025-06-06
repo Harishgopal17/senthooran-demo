@@ -45,7 +45,7 @@ export default function ProductCard({
 
   return (
     <div
-      className="w-[300px] bg-secondary border-[1px] border-[#999] rounded-2xl relative mb-10 hover:scale-[1.01] transition-all duration-300"
+      className="w-[300px] bg-secondary border-[1px] border-[#999] rounded-2xl relative pb-3 mb-10 hover:scale-[1.01] transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -56,7 +56,10 @@ export default function ProductCard({
         <div className="flex items-center justify-between p-5">
           <div className="">
             <div className="text-[18px] font-medium">{name}</div>
-            <div>&#8377;{price}</div>
+            <div className="flex items-center gap-5">
+              <span>&#8377;{price}</span>
+              <span>[{weight}]</span>
+            </div>
           </div>
           <div className="self-start">
             <span className="bg-yellow-shade flex justify-center items-center h-10 w-10 rounded-full cursor-pointer">

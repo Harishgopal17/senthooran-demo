@@ -40,7 +40,7 @@ export default function Nav({ cartItems }) {
   return (
     <>
       <header
-        className={`w-full py-4 px-3 fixed z-10 text-black bg-transparent transition-all duration-300 ${
+        className={`w-full py-3 px-3 fixed z-10 text-black bg-transparent transition-all duration-300 ${
           isScrolled ? "backdrop-blur-md border-b-[0.5px]" : "border-none"
         } max-xl:px-5`}
       >
@@ -48,7 +48,10 @@ export default function Nav({ cartItems }) {
           <div className="cursor-pointer">
             <a href="/" className="flex items-center justify-center gap-2">
               <img src={logo1} alt="" className="w-12 h-12 rounded-3xl" />
-              <span className="text-3xl font-bold">Senthooran</span>
+              <h1 className="text-2xl font-medium font-rubic">
+                Senthooran <br />
+                Organic Foods
+              </h1>
             </a>
           </div>
           <ul className="flex justify-center items-center gap-8 max-md:hidden">

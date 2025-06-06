@@ -127,10 +127,10 @@ export default function ProductsList({
                 </button>
               </div>
             ) : (
-              <div className="flex items-center gap-5 max-md:flex-col max-md:self-center">
+              <div className="flex items-center gap-5">
                 <div className="flex items-center justify-center border-[1px] border-[#999] rounded-xl bg-secondary">
                   <button
-                    className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-s-xl"
+                    className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-s-xl max-sm:px-2"
                     onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
                     disabled={quantity <= 1}
                   >
@@ -138,7 +138,7 @@ export default function ProductsList({
                   </button>
                   <input
                     type="number"
-                    className="px-4 py-2 w-12 text-center outline-none"
+                    className="px-4 py-2 w-12 text-center outline-none max-sm:px-2"
                     min={1}
                     value={quantity}
                     onChange={(e) =>
@@ -146,14 +146,14 @@ export default function ProductsList({
                     }
                   />
                   <button
-                    className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-e-xl"
+                    className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-e-xl max-sm:px-2"
                     onClick={() => setQuantity((prev) => prev + 1)}
                   >
                     <IoAdd size="18px" />
                   </button>
                 </div>
                 <button
-                  className="flex justify-center items-center gap-2 bg-deepGreen-shade text-secondary font-medium text-[18px] px-8 py-2 rounded-lg "
+                  className="flex justify-center items-center gap-2 bg-deepGreen-shade text-secondary font-medium text-[18px] px-8 py-2 rounded-lg max-sm:px-4 max-sm:text-base max-sm:gap-1 max-sm:py-3 "
                   onClick={() => {
                     addToCart();
                     // setModalContent("addCart");

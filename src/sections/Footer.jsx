@@ -26,7 +26,9 @@ export default function Footer({ setModalContent }) {
           <div className="flex flex-col gap-5 col-span-2 max-lg:col-span-3 max-sm:col-span-1">
             <div className="flex items-center gap-3">
               <img src={logo1} alt="" className="w-10 h-10 rounded-3xl" />
-              <span className="text-3xl font-semibold">Senthooran</span>
+              <span className="text-2xl font-medium font-rubic max-sm:text-xl">
+                Senthooran Organic Foods
+              </span>
             </div>
             <div className="text-sm leading-6 tracking-wide">
               Bringing you the goodness of traditional homemade health mixes and
