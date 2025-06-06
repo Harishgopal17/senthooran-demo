@@ -3,6 +3,7 @@ import { contact, navLinks } from "./../constants/index";
 import logo1 from "./../assets/images/logo1.png";
 import logo2 from "./../assets/images/logo2.png";
 import logo3 from "./../assets/images/logo3.jpg";
+import logo4 from "./../assets/images/logo4.png";
 
 export default function Footer({ setModalContent }) {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function Footer({ setModalContent }) {
         <div className="grid grid-cols-5 gap-20 max-lg:grid-cols-3  max-lg:gap-14 max-md:gap-x-2 max-md:gap-y-9 max-sm:grid-cols-1">
           <div className="flex flex-col gap-5 col-span-2 max-lg:col-span-3 max-sm:col-span-1">
             <div className="flex items-center gap-3">
-              <img src={logo1} alt="" className="w-10 h-10 rounded-3xl" />
+              <img src={logo4} alt="" className="w-10 h-10 rounded-3xl" />
               <span className="text-2xl font-medium font-rubic max-sm:text-xl">
                 Senthooran Organic Foods
               </span>

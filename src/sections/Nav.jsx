@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo1 from "./../assets/images/logo1.png";
 import logo2 from "./../assets/images/logo2.png";
 import logo3 from "./../assets/images/logo3.jpg";
+import logo4 from "./../assets/images/logo4.png";
 export default function Nav({ cartItems }) {
   const [mblMenu, setMblMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ export default function Nav({ cartItems }) {
         <nav className="flex justify-between items-center max-container">
           <div className="cursor-pointer">
             <a href="/" className="flex items-center justify-center gap-2">
-              <img src={logo1} alt="" className="w-12 h-12 rounded-3xl" />
+              <img src={logo4} alt="" className="w-12 h-12 rounded-3xl" />
               <h1 className="text-2xl font-medium font-rubic">
                 Senthooran <br />
                 Organic Foods
