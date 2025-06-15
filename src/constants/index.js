@@ -26,7 +26,6 @@ import arisiVathal2 from "./../assets/images/arisiVathal2.jpg";
 import blackRiceMain from "./../assets/images/blackRiceMain.jpg";
 import blackRiceMainPacktwo from "./../assets/images/blackRiceMainPacktwo.jpg";
 import comboMain from "./../assets/images/comboMain.jpg";
-import comboMain2 from "./../assets/images/combo2.jpg";
 import { FaLeaf } from "react-icons/fa";
 import { GiWheat } from "react-icons/gi";
 import { BsFillBoxSeamFill } from "react-icons/bs";
