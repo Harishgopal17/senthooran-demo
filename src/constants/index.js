@@ -173,7 +173,7 @@ export const products = [
   {
     img: comboMain,
     name: "pack of Six (Arisi vathal free)",
-    price: price.packofsix,
+    price: price.combo6,
     // weight: "250g",
     param: "combo6",
   },

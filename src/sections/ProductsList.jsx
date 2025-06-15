@@ -91,7 +91,7 @@ export default function ProductsList({
               {itemName}
             </div>
             <div className="text-[20px] leading-7 tracking-wide font-bold text-deepGreen-shade">
-              &#8377;{price} [{weight}]
+              &#8377;{price} {weight && `[${weight}]`}
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-[18px] font-medium">Description</div>
