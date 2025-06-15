@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiShoppingCart } from "react-icons/ti";
-import blackRiceMain from "./../assets/images/blackRiceMain.jpg";
 
 export default function CheckOut({ cartItems, setCartItems }) {
   const navigate = useNavigate();
@@ -67,7 +66,7 @@ export default function CheckOut({ cartItems, setCartItems }) {
     message += `💰 Total Amount (incl. delivery): ₹${getTotalPrice() + 40}\n`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappLink = `https://wa.me/919381066715?text=${encodedMessage}`;
+    const whatsappLink = `https://wa.me/918122762419?text=${encodedMessage}`;
     window.open(whatsappLink, "_blank");
   };
 
@@ -93,20 +92,20 @@ export default function CheckOut({ cartItems, setCartItems }) {
   }
 
   return (
-    <div className="w-full flex justify-center pt-20 bg-warmBeige-tint text-primary max-sm:pt-24">
+    <div className="w-full flex justify-center pt-24 bg-warmBeige-tint text-primary max-sm:pt-24">
       <div className="w-full flex flex-col max-container gap-10 px-20 pb-20 max-lg:px-10 max-sm:px-5">
         <div className="text-[20px] text-primary-shade">
           <span className="text-3xl font-bold text-primary">Your Cart</span> (
           {cartItems.length} items)
         </div>
         <div className="grid items-center justify-between grid-cols-3 gap-20 max-lg:gap-14 max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-start max-md:w-full">
-          <div className="col-span-2">
+          <div className="col-span-2 max-sm:w-full">
             {cartItems.map((item, index) => (
               <div
                 key={index}
-                className="flex gap-5 items-center bg-secondary py-2 rounded-xs"
+                className="flex gap-5 items-center bg-secondary py-2 rounded-xs max-sm:grid max-sm:grid-cols-3"
               >
-                <div className="flex flex-col items-center max-sm:w-[30%]">
+                <div className="flex flex-col items-center">
                   <img src={item.images[0]} className="w-[120px]" />
                   <div className="flex items-center border-[1px] border-[#999] rounded-xl bg-secondary">
                     <button
@@ -126,7 +125,7 @@ export default function CheckOut({ cartItems, setCartItems }) {
                     </button>
                   </div>
                 </div>
-                <div className="flex flex-col gap-3 pr-5">
+                <div className="flex flex-col gap-3 pr-5 max-sm:col-span-2">
                   <div className="text-lg font-medium max-md:text-base">
                     {item.itemName}
                   </div>

@@ -54,6 +54,7 @@ export default function ProductsList({
 
   useEffect(() => {
     setItemAdded(false);
+    setQuantity(1);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
@@ -104,15 +105,19 @@ export default function ProductsList({
               </ul>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="text-[18px] font-medium">Ingredients</div>
-              <div>
-                {ingredients.map((ingredient, index) => (
-                  <span key={index}>
-                    {ingredient}
-                    {index < ingredients.length - 1 && ", "}
-                  </span>
-                ))}
-              </div>
+              {ingredients && (
+                <>
+                  <div className="text-[18px] font-medium">Ingredients</div>
+                  <div>
+                    {ingredients.map((ingredient, index) => (
+                      <span key={index}>
+                        {ingredient}
+                        {index < ingredients.length - 1 && ", "}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
             {itemAdded == true ? (
               <div className="w-full flex items-center justify-center">
@@ -137,13 +142,14 @@ export default function ProductsList({
                     <HiOutlineMinus size="18px" />
                   </button>
                   <input
-                    type="number"
+                    type="text"
                     className="px-4 py-2 w-12 text-center outline-none max-sm:px-2"
                     min={1}
                     value={quantity}
-                    onChange={(e) =>
-                      setQuantity(Math.max(1, parseInt(e.target.value) || 1))
-                    }
+                    onChange={(e) => {
+                      const val = parseInt(e.target.value);
+                      setQuantity(isNaN(val) || val < 1 ? 1 : val);
+                    }}
                   />
                   <button
                     className="px-4 py-2 bg-gray-100 hover:bg-gray-200 transition-colors rounded-e-xl max-sm:px-2"

@@ -58,7 +58,7 @@ export default function ProductCard({
             <div className="text-[18px] font-medium">{name}</div>
             <div className="flex items-center gap-5">
               <span>&#8377;{price}</span>
-              <span>[{weight}]</span>
+              {weight && <span>[{weight}]</span>}
             </div>
           </div>
           <div className="self-start">

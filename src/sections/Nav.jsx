@@ -31,7 +31,7 @@ export default function Nav({ cartItems }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -51,7 +51,7 @@ export default function Nav({ cartItems }) {
               <img src={logo4} alt="" className="w-12 h-12 rounded-3xl" />
               <h1 className="text-2xl font-medium font-rubic">
                 Senthooran <br />
-                Organic Foods
+                Health Foods
               </h1>
             </a>
           </div>

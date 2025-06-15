@@ -30,7 +30,7 @@ export default function Home({
   return (
     <>
       <Helmet>
-        <title>Senthooran Organic foods</title>
+        <title>Senthooran Health Foods</title>
         <meta
           name="description"
           content="Get traditional, nutritious health mixes and organic foods delivered across Tamilnadu."
@@ -49,10 +49,10 @@ export default function Home({
           property="og:description"
           content="Healthy & natural mixes to boost energy and immunity."
         />
-        <meta property="og:url" content="https://senthooran.netlify.app" />
+        <meta property="og:url" content="https://senthooranhealthfoods.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Senthooran" />
-        <link rel="canonical" href="https://senthooran.netlify.app" />
+        <link rel="canonical" href="https://senthooranhealthfoods.com" />
       </Helmet>
       <Hero />
       <About />

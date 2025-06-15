@@ -23,12 +23,12 @@ export default function Footer({ setModalContent }) {
     <footer className="w-full bg-primary text-secondary">
       <div className="flex flex-col gap-5  max-container px-5 pt-8 pb-3 max-lg:px-10 max-md:px-5">
         {/* <div className="flex items-center justify-between"> */}
-        <div className="grid grid-cols-5 gap-20 max-lg:grid-cols-3  max-lg:gap-14 max-md:gap-x-2 max-md:gap-y-9 max-sm:grid-cols-1">
+        <div className="grid grid-cols-5 gap-12 max-lg:grid-cols-3  max-lg:gap-14 max-md:gap-x-2 max-md:gap-y-9 max-sm:grid-cols-1">
           <div className="flex flex-col gap-5 col-span-2 max-lg:col-span-3 max-sm:col-span-1">
             <div className="flex items-center gap-3">
               <img src={logo4} alt="" className="w-10 h-10 rounded-3xl" />
               <span className="text-2xl font-medium font-rubic max-sm:text-xl">
-                Senthooran Organic Foods
+                Senthooran Health Foods
               </span>
             </div>
             <div className="text-sm leading-6 tracking-wide">
@@ -82,7 +82,7 @@ export default function Footer({ setModalContent }) {
           </div>
         </div>
         <div className="text-xs">
-          &copy; 2025 Senthooran | All Rights Reserved
+          &copy; 2025 Senthooran health food | All Rights Reserved
         </div>
       </div>
     </footer>
