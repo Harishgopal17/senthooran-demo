@@ -43,14 +43,14 @@ export const navLinks = [
 // export default homepage, blackRice, healthmix, ragipowder, thalipuVadagam
 
 const price = {
-  healthmix: 270,
+  healthmix: 300,
   healthmixpacktwo: 580,
   blackricepowder: 320,
   blackricepowderpacktwo: 600,
   ragipowder: 100,
   ragipowderpacktwo: 180,
   arisivathal: 100,
-  thalippuvadagam: 100,
+  thalippuvadagam: 255,
   thalippuvadagampacktwo: 185,
   karuveppilaipowder: 80,
   blackrice: 80,
@@ -96,7 +96,7 @@ export const products = [
     img: healthMixMainPacktwo,
     name: "Multigrain Health Mix (Pack of Two)",
     price: price.healthmixpacktwo,
-    weight: "500g",
+    weight: "500g x 2",
     param: "healthmixpacktwo",
   },
   {
@@ -110,7 +110,7 @@ export const products = [
     img: blackRicePowderMainPacktwo,
     name: "Karuppu Kavuni Kanji Maavu (Pack of Two)",
     price: price.blackricepowderpacktwo,
-    weight: "250g",
+    weight: "250g x 2",
     param: "blackricepowderpacktwo",
   },
   {
@@ -124,7 +124,7 @@ export const products = [
     img: ragiPowderMainPacktwo,
     name: "Ragi Powder (Pack of Two)",
     price: price.ragipowderpacktwo,
-    weight: "500g",
+    weight: "500g x 2",
     param: "ragipowderpacktwo",
   },
 
@@ -132,14 +132,14 @@ export const products = [
     img: thalippuVadagamMain,
     name: "Thalipu Vadagam",
     price: price.thalippuvadagam,
-    weight: "125g",
+    weight: "250g",
     param: "thalippuvadagam",
   },
   {
     img: thalippuVadagamMainPacktwo,
     name: "Thalipu Vadagam (Pack of Two)",
     price: price.thalippuvadagampacktwo,
-    weight: "125g",
+    weight: "125g x 2",
     param: "thalippuvadagampacktwo",
   },
   {
@@ -172,7 +172,7 @@ export const products = [
   // },
   {
     img: comboMain,
-    name: "pack of Six (Arisi vathal free)",
+    name: "Traditional Health Essentials - Pack of 6",
     price: price.combo6,
     // weight: "250g",
     param: "combo6",
@@ -244,7 +244,7 @@ export const productsListContent = {
     images: [healthMixMainPacktwo, healthMixback, healthMix2, healthMix3],
     itemName: "Multigrain Health Mix (Pack of Two)",
     price: price.healthmixpacktwo,
-    weight: "500g(1pc)",
+    weight: "500g x 2",
     description:
       "A powerhouse blend of carefully selected whole grains, pulses, and nuts — roasted and ground using traditional methods to preserve nutrition.",
     bestFor: [
@@ -313,7 +313,7 @@ export const productsListContent = {
     ],
     itemName: "Karuppu Kavuni Kanji Maavu (Pack of Two)",
     price: price.blackricepowderpacktwo,
-    weight: "250g(1pc)",
+    weight: "250g x 2",
     description:
       "Made from the rare and powerful black rice (“Karuppu Kavuni”) – rich in antioxidants and iron. A heritage health food that supports heart health and improves energy.",
     bestFor: [
@@ -350,7 +350,7 @@ export const productsListContent = {
     images: [ragiPowderMainPacktwo, ragiPowder2, ragiPowder3, ragiPowder4],
     itemName: "Ragi Powder (pack of Two)",
     price: price.ragipowderpacktwo,
-    weight: "500g(1pc)",
+    weight: "500g x 2",
     description:
       "Ragi is rich in calcium and iron, making it great for strong bones and active energy. Easy to digest and ideal for all ages — perfect for porridge or dosa.",
     bestFor: [
@@ -381,7 +381,7 @@ export const productsListContent = {
     images: [thalippuVadagamMain, thalippuVadagam2, thalippuVadagam3],
     itemName: "Thaalipu Vadagam (Seasoning Balls)",
     price: price.thalippuvadagam,
-    weight: "125g",
+    weight: "250g",
     description:
       "Flavor-packed seasoning balls made with sun-dried onion, garlic, and spices. Just temper in oil to add instant traditional taste to any dish. — handmade and sun-dried with care.",
     bestFor: [
@@ -404,7 +404,7 @@ export const productsListContent = {
     images: [thalippuVadagamMainPacktwo, thalippuVadagam2, thalippuVadagam3],
     itemName: "Thaalipu Vadagam (Pack of Two)",
     price: price.thalippuvadagampacktwo,
-    weight: "125g(1pc)",
+    weight: "125g x 2",
     description:
       "Flavor-packed seasoning balls made with sun-dried onion, garlic, and spices. Just temper in oil to add instant traditional taste to any dish. — handmade and sun-dried with care.",
     bestFor: [
@@ -456,7 +456,7 @@ export const productsListContent = {
     images: [comboMain],
     itemName: "Traditional Health Essentials - Combo Pack of 6",
     price: price.combo6,
-    weight: "250g",
+    // weight: "250g",
     description:
       "Experience the richness of tradition and health in one bundle with our Combo Pack of Six. This handpicked collection includes six of our best-selling health products, carefully prepared using natural ingredients and time-tested methods. Whether you're looking to enhance your diet or gift a loved one something wholesome, this combo brings both nutrition and taste to your kitchen.",
     bestFor: [
@@ -488,7 +488,7 @@ export const contact = [
 
 export const termsAndCond = [
   "All orders are processed only after confirmation via WhatsApp.",
-  "Product prices are subject to change based on availability and raw material costs.",
+  "Product prices and product image are subject to change based on availability and raw material costs.",
   "Delivery timelines may vary based on location and courier availability.",
   "No returns are accepted for food items once opened, unless there's a quality issue reported on the day of delivery.",
 ];
