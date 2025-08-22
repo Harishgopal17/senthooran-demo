@@ -135,13 +135,13 @@ export const products = [
     weight: "250g",
     param: "thalippuvadagam",
   },
-  {
-    img: thalippuVadagamMainPacktwo,
-    name: "Thalipu Vadagam (Pack of Two)",
-    price: price.thalippuvadagampacktwo,
-    weight: "125g x 2",
-    param: "thalippuvadagampacktwo",
-  },
+  // {
+  //   img: thalippuVadagamMainPacktwo,
+  //   name: "Thalipu Vadagam (Pack of Two)",
+  //   price: price.thalippuvadagampacktwo,
+  //   weight: "125g x 2",
+  //   param: "thalippuvadagampacktwo",
+  // },
   {
     img: arisiVathalMain,
     name: "Arisi Vathal",
@@ -400,29 +400,29 @@ export const productsListContent = {
       "Curry leaves",
     ],
   },
-  thalippuvadagampacktwo: {
-    images: [thalippuVadagamMainPacktwo, thalippuVadagam2, thalippuVadagam3],
-    itemName: "Thaalipu Vadagam (Pack of Two)",
-    price: price.thalippuvadagampacktwo,
-    weight: "125g x 2",
-    description:
-      "Flavor-packed seasoning balls made with sun-dried onion, garlic, and spices. Just temper in oil to add instant traditional taste to any dish. — handmade and sun-dried with care.",
-    bestFor: [
-      "Adds a burst of traditional flavor to your dishes",
-      "Ready-to-use – saves time and effort",
-      "No preservatives or artificial flavors",
-      "Best before 12 months from the date of packing",
-    ],
-    ingredients: [
-      "Turmeric",
-      "Small onion",
-      "Mustard",
-      "Urad dal",
-      "Garlic",
-      "MFenugreek (Methi) seeds",
-      "Curry leaves",
-    ],
-  },
+  // thalippuvadagampacktwo: {
+  //   images: [thalippuVadagamMainPacktwo, thalippuVadagam2, thalippuVadagam3],
+  //   itemName: "Thaalipu Vadagam (Pack of Two)",
+  //   price: price.thalippuvadagampacktwo,
+  //   weight: "125g x 2",
+  //   description:
+  //     "Flavor-packed seasoning balls made with sun-dried onion, garlic, and spices. Just temper in oil to add instant traditional taste to any dish. — handmade and sun-dried with care.",
+  //   bestFor: [
+  //     "Adds a burst of traditional flavor to your dishes",
+  //     "Ready-to-use – saves time and effort",
+  //     "No preservatives or artificial flavors",
+  //     "Best before 12 months from the date of packing",
+  //   ],
+  //   ingredients: [
+  //     "Turmeric",
+  //     "Small onion",
+  //     "Mustard",
+  //     "Urad dal",
+  //     "Garlic",
+  //     "MFenugreek (Methi) seeds",
+  //     "Curry leaves",
+  //   ],
+  // },
   karuveppilaipowder: {
     images: [KaruveppilaiPowderMain, KaruveppilaiPowder2, KaruveppilaiPowder3],
     itemName: "Karuvepillai Podi (Curry Leaves Powder)",
