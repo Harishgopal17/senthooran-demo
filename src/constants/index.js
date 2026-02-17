@@ -1,4 +1,9 @@
 import homepage from "./../assets/images/homepage.png";
+import abcMain from "./../assets/images/abcMain.png";
+import abcBack from "./../assets/images/abcBack.jpeg";
+import abc2 from "./../assets/images/abc2.jpeg";
+import beetrootMain from "./../assets/images/beetrootMain.png";
+import beetroot2 from "./../assets/images/beetroot2.jpeg";
 import healthMixMain from "./../assets/images/healthMixMain.jpg";
 import healthMixback from "./../assets/images/healthMixback.jpg";
 import healthMix2 from "./../assets/images/healthMix2.jpeg";
@@ -43,6 +48,8 @@ export const navLinks = [
 // export default homepage, blackRice, healthmix, ragipowder, thalipuVadagam
 
 const price = {
+  abc: 450,
+  beetroot: 260,
   healthmix: 300,
   healthmixpacktwo: 580,
   blackricepowder: 320,
@@ -85,6 +92,20 @@ export const whyUs = [
 ];
 
 export const products = [
+  {
+    img: abcMain,
+    name: "ABC Milk Mix",
+    price: price.abc,
+    weight: "200g",
+    param: "abc",
+  },
+  {
+    img: beetrootMain,
+    name: "Beetroot Milk Mix",
+    price: price.beetroot,
+    weight: "200g",
+    param: "beetroot",
+  },
   {
     img: healthMixMain,
     name: "Multigrain Health Mix",
@@ -203,6 +224,45 @@ export const faqContent = [
 ];
 
 export const productsListContent = {
+  abc: {
+    images: [abcMain, abcBack, abc2],
+    itemName: "ABC Milk Mix",
+    price: price.abc,
+    weight: "200g",
+    description:
+      "A nutritious and flavorful ABC Milk Mix made from carefully selected apples, beetroot, carrots, makhana, and premium nuts. The ingredients are hygienically cleaned, gently dried using a controlled dryer process to preserve natural nutrients, and finely ground to ensure smooth blending in milk. Enriched with country sugar and aromatic cardamom, this wholesome mix delivers both taste and health in every cup.",
+    bestFor: [
+      "Naturally boosts energy and stamina",
+      "Rich in vitamins, minerals, and antioxidants",
+      "Supports immunity and overall wellness",
+      "Best before 12 months from the date of packing",
+    ],
+    ingredients: [
+      "Apple",
+      "Beetroot",
+      "Carrot",
+      "Makhana (Fox nuts)",
+      "Cashew",
+      "Badam (Almond)",
+      "Country sugar",
+      "Elachi (Cardamom)",
+    ],
+  },
+  beetroot: {
+    images: [beetrootMain, beetroot2],
+    itemName: "Beetroot Milk Mix",
+    price: price.beetroot,
+    weight: "200g",
+    description:
+      "A vibrant and nutritious Beetroot Milk Mix made from carefully selected beetroot and premium dry fruits. The ingredients are hygienically cleaned and gently dried using a controlled dryer process to retain their natural color, flavor, and nutrients. Finely ground to a smooth powder, this blend mixes easily with warm milk to create a delicious, naturally sweet, and energy-boosting drink for all age groups.",
+    bestFor: [
+      "Supports healthy blood levels and stamina",
+      "Rich in natural antioxidants and essential nutrients",
+      "Boosts energy and overall wellness",
+      "Best before 12 months from the date of packing",
+    ],
+    ingredients: ["Beetroot", "Cashew", "Badam (Almond)", "Country sugar"],
+  },
   healthmix: {
     images: [healthMixMain, healthMixback, healthMix2, healthMix3],
     itemName: "Multigrain Health Mix",
